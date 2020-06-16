@@ -15,7 +15,10 @@ You can find the documentation in the garmin heath api developer portal.
 
 You can now install the following and run the example.
 
+```
 npm i -g typescript ts-node
+```
+
 
 ```
   npm i
