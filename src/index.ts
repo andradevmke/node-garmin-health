@@ -1,3 +1,10 @@
+/**
+ * Aside from some helper functinos in here this is just a typescript refactor of the 
+ * examples provided the oauth-1.0a library. See that package page for more detals.
+ * 
+ * https://www.npmjs.com/package/oauth-1.0a
+ */
+
 import Oauth, { RequestOptions, Options, Token} from "oauth-1.0a";
 import { createHmac } from "crypto";
 
@@ -25,6 +32,22 @@ export const parseRequestToken = (requestTokenResponse: string) : Token => {
   }
 }
 
+
+/**
+ * #getHeaders
+ * 
+ * @param request 
+ * @param token 
+ * 
+ * Note: by providing a token the secret will be appended to the 
+ * Consumer Secret per Oauth1 specification as follows:
+ * ConsumerSecret&TokenSecret
+ * 
+ * The Token key will be added to the signature as a parameter
+ * 
+ * If adding oauth_verifier, add it to the RequestOptions.data property
+ * example RequestOptions.data.oauth_verifier = 'from oauthConfirm callback'
+ */
 export const getHeaders = ( request: RequestOptions, token?: Token) => {
   const oauthInstance = getOauthInstance();
   const authorization = oauthInstance.authorize(request, token);
