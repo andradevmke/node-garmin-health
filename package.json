@@ -1,0 +1,33 @@
+{
+  "name": "garmin-health",
+  "version": "1.0.0",
+  "description": "Quick working Oauth Example for Garmin Health API using Garmin Connect",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "ts-node src/example.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andradevmke/node-garmin-health.git"
+  },
+  "author": "Omar Andrade",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andradevmke/node-garmin-health/issues"
+  },
+  "homepage": "https://github.com/andradevmke/node-garmin-health#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "oauth-1.0a": "^2.2.6"
+  },
+  "devDependencies": {
+    "@types/express": "github:types/express",
+    "@types/node": "^14.0.13",
+    "@types/request-promise": "^4.1.46",
+    "nodemon": "^2.0.4"
+  }
+}
