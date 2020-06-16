@@ -15,7 +15,7 @@ const GARMIN_ACCESS_TOKEN_URL = process.env.GARMIN_ACCESS_TOKEN_URL || ""
 const GARMIN_CONFIRMATION_URL = process.env.GARMIN_CONFIRMATION_URL || "";
 const CALLBACK = `http://localhost:${PORT}/`;
 
-let anonymousRequestToken: Token;
+let anonymousRequestToken: Token; // DONT DO THIS IN A REAL IMPLEMENTATION. Store to DB, session specific cache, or other
 
 // Oauth process is kicked off by hitting the redirect endpoint
 // 1. Acquire anonymous request token
