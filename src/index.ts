@@ -1,6 +1,6 @@
 /**
- * Aside from some helper functinos in here this is just a typescript refactor of the 
- * examples provided the oauth-1.0a library. See that package page for more detals.
+ * Aside from some helper functions in here this is just a typescript refactor of the 
+ * examples provided by the oauth-1.0a library. See that package page for more detals.
  * 
  * https://www.npmjs.com/package/oauth-1.0a
  */
