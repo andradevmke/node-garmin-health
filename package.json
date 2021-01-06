@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/andradevmke/node-garmin-health#readme",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "oauth-1.0a": "^2.2.6"
